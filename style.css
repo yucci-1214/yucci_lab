@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/* 共通部分　
+----------------------------------- */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Noto Sans JP',"Yu Gothic Medium","遊ゴシック Medium","YuGothic","遊ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+  line-height: 1.7;
+  color:#432;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: .3s;
+  opacity: 0.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img1 {
+  width: 40%;
+  margin-top: 30px;
+}
+
+.img2 {
+  width:80%;
+}
+
+.img3 {
+  width: 30%;
+  margin: 10px 30px;
+}
+
+.img4 {
+  width: 40%;
+  margin: 30px 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+.logo {
+  height: 90px;
+  width: 90px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color:#fff;
+}
+
+header {
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+
+.header {
+  background-color:rgba(0, 90, 224, 0.75);
+  box-shadow: 0 5px 10px 0 rgba(120, 120, 120, 0.5);
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.bg-color {
+  background-color: #D9E5FF;
+  height: 600px;
+  padding: 3% 5%;
+  margin-top: 90px;
+}
+
+.main{
+  text-align: center;
+}
+
+.main-text {
+  margin: 0 auto;
+  color: #432;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
+}
+
+.title {
+  border-bottom: solid;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30PX;
+  font-family: 'Oswald';
+  letter-spacing: 3px;
+}
+
+.message {
+  font-family: 'Oswald';
+}
+
+h2 {
+  line-height: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bolder;
+  color: #000;
+  line-height: 60px;
+}
+
+.bg-img {
+  height: 100%;
+  background-image: url("images/designer_.png"), url("images/web_developer.png"), url("images/team_building_.png");
+  background-size: 30%, 30%, 30%;
+  background-position: left top, center bottom, right top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.contents {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 6%;
+}
+
+.item1 {
+  background-color: #D9E5FF;
+  box-shadow: 0 10px 15px 0 rgba(192, 192, 192, 0.5);
+  border-radius: 30px;
+  padding-bottom: 30px;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.custumer{
+  display: flex;
+  justify-content: center;
+}
+
+.grid2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 5%;
+}
+
+.item2 {
+  background-color: #D9E5FF;
+  box-shadow: 0 10px 15px 0 rgba(192, 192, 192, 0.5);
+  width: 190px;
+  height:190px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.item2 span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width :190px;
+  text-align:center;
+}
+
+.fas {
+  font-size: 3.5rem;
+}
+
+dl {
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 0.8em;
+  box-shadow: 0 5px 10px 0 rgba(192, 192, 192, 0.5);
+}
+
+.price {
+  display: flex; /* 子要素のdtとddを横並びにする */
+  flex-wrap: wrap; /* 1つのdtとddで1行になるよう改行させる */
+}
+
+dt, dd {
+  margin: 0; /* ブラウザの初期値をクリア */
+  padding: 0; /* ブラウザの初期値をクリア */
+  vertical-align: middle;
+  min-height: 1.5em;
+  color: #000000;
+  background: rgba(217, 229, 255, 0.65);
+  box-sizing: border-box;
+}
+
+.price dt {
+  width: 200px;
+  text-align:center;
+  padding: 1em 0 1em 1em;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 4em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.price dd {
+  padding: 1em 1em 1.25em 2em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: calc(100% - 200px);
+  text-align: left;
+}
+
+.red {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.form label {
+
+}
